@@ -126,3 +126,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  background: #E0D7D7;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.container header {
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 20px;
+  background: #404040;
+}
+.container header h1 {
+  font-size: 3rem;
+  color: white;
+}
+.container .intro {
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+.container .intro div img {
+  width: 100%;
+  height: auto;
+}

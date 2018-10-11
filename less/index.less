@@ -48,3 +48,66 @@ table {
 	border-spacing: 0;
 }
 
+// END OF RESET
+
+// COLORS
+@white: white;
+@estate: #E0D7D7;
+@gray: #404040;
+// END OF COLORS
+
+// MIXINS
+
+.just-center() {
+    display: flex;
+    justify-content: center;
+}
+
+.align-center() {
+    display: flex;
+    align-items: center;
+}
+
+// END OF MIXINS
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size: 62.5%;
+    background: @estate;
+}
+
+// END OF PRECSS STUFF
+
+
+// DESKTOP
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  header{
+      border: 2px solid black;
+      .just-center();
+      .align-center();
+      height: 50px;
+      margin-top: 20px;
+      background: @gray;
+      h1 {
+          font-size: 3rem;
+          color: @white;
+      }
+  }
+  .intro {
+      border: 2px solid red;
+      .just-center();
+      div img{
+          width: 100%;
+          height: auto;
+         
+         
+      }
+  }
+}
